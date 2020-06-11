@@ -1,0 +1,11 @@
+.header {
+  border: 1px solid red;
+  display: inline;
+  position: fixed;
+  z-index: 999px;
+
+  &__menu--logo {
+    width: 44px;
+    height: 44px;
+  }
+}
