@@ -1,6 +1,11 @@
 .hero {
   border: 1px solid blue;
-  background-image: url ("./assets/images/cover.jpg");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./../images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &__title {
     display: flex;
