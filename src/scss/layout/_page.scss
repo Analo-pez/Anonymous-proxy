@@ -49,4 +49,32 @@
 
 .articles {
   border: 1px solid green;
+  background-color: $color-secondary;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 125px);
+
+  &__title {
+    text-align: center;
+    font-family: $font-titles;
+    font-size: 24px;
+    margin-top: $margin-elements;
+    grid-column: span 5;
+  }
+  &__item1 {
+    text-align: center;
+    grid-column: span 3;
+  }
+  &__item2 {
+    text-align: center;
+    grid-column: span 3;
+  }
+  &__item3 {
+    text-align: center;
+    grid-column: span 3;
+  }
+  &__button {
+    text-align: center;
+    grid-column: span 3;
+  }
 }
