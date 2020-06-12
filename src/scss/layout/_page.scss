@@ -8,18 +8,35 @@
   display: flex;
   flex-direction: column;
 
+  @media all and (min-width: 768px) {
+    display: inline-block;
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+
   &__note {
-    font-size: 14px;
     color: $color-smallFont;
     text-transform: capitalize;
+    padding-bottom: 5px;
+
+    @media all and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
 
   &__title {
     font-family: $font-titles;
     font-size: 24px;
+    font-weight: bold;
     text-transform: capitalize;
-    margin-top: 5px;
-    margin-bottom: $margin-principal;
+
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+    }
+    @media all and (min-width: 1280px) {
+      font-size: 32px;
+      line-height: 45px;
+    }
   }
 
   &__text {
@@ -29,6 +46,7 @@
     line-height: 1.6;
     color: $color-greyFont;
     margin-bottom: $margin-elements;
+    margin-top: $margin-principal;
   }
 
   &__button {
@@ -53,25 +71,52 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 110px repeat(3, 125px) 150px;
 
+  @media all and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 105px 167px 125px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
   &__title {
     text-align: center;
     font-family: $font-titles;
     font-size: 24px;
     margin-top: $margin-elements;
     grid-column: span 5;
+
+    @media all and (min-width: 768px) {
+      grid-column: 1/4;
+      font-size: 26px;
+    }
   }
   &__item1 {
     text-align: center;
     grid-column: 2 / 5;
     line-height: 30px;
 
+    @media all and (min-width: 768px) {
+      grid-column: span 1;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
     &--title {
       font-family: $font-titles;
       font-size: 18px;
+
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+      }
     }
     &--text {
       font-family: $font-main;
       font-size: 18px;
+
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+        padding-top: 10px;
+      }
     }
   }
   &__item2 {
@@ -79,13 +124,31 @@
     grid-column: 2/5;
     line-height: 30px;
 
+    @media all and (min-width: 768px) {
+      grid-column: span 1;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      font-size: 24px;
+      padding-left: $margin-principal;
+      padding-right: $margin-principal;
+    }
+
     &--title {
       font-family: $font-titles;
       font-size: 18px;
+
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+      }
     }
     &--text {
       font-family: $font-main;
       font-size: 18px;
+
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+        padding-top: 10px;
+      }
     }
   }
   &__item3 {
@@ -93,18 +156,40 @@
     grid-column: 2/5;
     line-height: 30px;
 
+    @media all and (min-width: 768px) {
+      grid-column: span 1;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      margin-left: $margin-principal;
+    }
+
     &--title {
       font-family: $font-titles;
       font-size: 18px;
+
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+      }
     }
     &--text {
       font-family: $font-main;
       font-size: 18px;
+
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+        padding-top: 10px;
+      }
     }
   }
   &__button {
     text-align: center;
     grid-column: 2/5;
+
+    @media all and (min-width: 768px) {
+      grid-column: span 3;
+      grid-row-start: 3;
+      grid-row-end: 3;
+    }
   }
   input {
     width: 184px;
