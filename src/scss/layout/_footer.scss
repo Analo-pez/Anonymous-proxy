@@ -10,10 +10,11 @@
 
   @media all and (min-width: 768px) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: start;
     padding-left: 39px;
     padding-right: 39px;
+    padding-top: 0;
   }
 
   a {
@@ -30,6 +31,7 @@
 
   @media all and (min-width: 768px) {
     order: 3;
+    padding-top: 50px;
   }
 }
 
@@ -40,15 +42,31 @@
 
   @media all and (min-width: 768px) {
     order: -1;
+    padding-top: 50px;
   }
 
   span {
     color: $color-primary;
     margin-top: $margin-principal;
   }
-  .icon {
+  &icon {
     color: $color-button;
     padding: 1px;
     margin: 2px;
+  }
+}
+
+.footer__symbol {
+  background-color: $color-primary;
+  width: 50px;
+  height: 50px;
+  padding-top: $margin-principal;
+  border-radius: 50%;
+  position: relative;
+  transform: translate(360%, -175%);
+
+  @media all and (min-width: 768px) {
+    padding: 13px;
+    transform: translate(100%, -50%);
   }
 }
