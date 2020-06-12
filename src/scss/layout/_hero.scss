@@ -8,13 +8,17 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  @media all and (min-width: 768px) {
+    height: 768px;
+  }
   &__title {
     color: $color-primary;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 320px;
+    margin-top: 384px;
+
     span {
       text-transform: uppercase;
       font-family: $font-titles;
@@ -22,10 +26,23 @@
       font-weight: bold;
       font-stretch: 20px;
       line-height: 54px;
+
+      @media all and (min-width: 768px) {
+        font-size: 80px;
+        line-height: 106px;
+      }
+      @media all and (min-width: 1280px) {
+        font-size: 100px;
+        line-height: 132px;
+      }
     }
     p {
       margin-top: 20px;
       font-family: $font-main;
+
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+      }
     }
   }
 }
