@@ -48,11 +48,10 @@
 }
 
 .articles {
-  border: 1px solid green;
   background-color: $color-secondary;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 125px);
+  grid-template-rows: 110px repeat(3, 125px) 150px;
 
   &__title {
     text-align: center;
@@ -63,18 +62,58 @@
   }
   &__item1 {
     text-align: center;
-    grid-column: span 3;
+    grid-column: 2 / 5;
+    line-height: 30px;
+
+    &--title {
+      font-family: $font-titles;
+      font-size: 18px;
+    }
+    &--text {
+      font-family: $font-main;
+      font-size: 18px;
+    }
   }
   &__item2 {
     text-align: center;
-    grid-column: span 3;
+    grid-column: 2/5;
+    line-height: 30px;
+
+    &--title {
+      font-family: $font-titles;
+      font-size: 18px;
+    }
+    &--text {
+      font-family: $font-main;
+      font-size: 18px;
+    }
   }
   &__item3 {
     text-align: center;
-    grid-column: span 3;
+    grid-column: 2/5;
+    line-height: 30px;
+
+    &--title {
+      font-family: $font-titles;
+      font-size: 18px;
+    }
+    &--text {
+      font-family: $font-main;
+      font-size: 18px;
+    }
   }
   &__button {
     text-align: center;
-    grid-column: span 3;
+    grid-column: 2/5;
+  }
+  input {
+    width: 184px;
+    height: 45px;
+    margin-top: $margin-principal;
+    background-color: $color-button;
+    border-style: none;
+    color: $color-primary;
+    font-family: $font-main;
+    font-size: 20px;
   }
 }

@@ -1,3 +1,37 @@
 .footer {
-  border: 1px solid orange;
+  background-color: $color-blue;
+  font-family: $font-main;
+  line-height: 25px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  a {
+    color: $color-primary;
+  }
+  li {
+    padding: 8px;
+  }
+}
+
+.contactWebs {
+  padding-top: $margin-elements;
+  padding-bottom: $margin-elements;
+}
+
+.copy {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: $color-primary;
+    margin-top: $margin-principal;
+  }
+  .icon {
+    color: $color-button;
+    padding: 1px;
+    margin: 2px;
+  }
 }
