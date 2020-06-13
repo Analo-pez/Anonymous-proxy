@@ -1,5 +1,10 @@
 .principalSection {
   margin-top: $margin-elements;
+
+  @media all and (min-width: 1280px) {
+    padding-left: 275px;
+    padding-right: 275px;
+  }
 }
 
 .description {
@@ -57,7 +62,9 @@
     padding: 5px;
     text-align: center;
     margin-bottom: $margin-elements;
-
+    &:hover {
+      background-color: $color-button;
+    }
     &--action {
       color: $color-button;
       font-size: 24px;
@@ -76,6 +83,11 @@
     grid-template-rows: 105px 167px 125px;
     padding-left: 39px;
     padding-right: 39px;
+  }
+
+  @media all and (min-width: 1280px) {
+    padding-left: 85px;
+    padding-right: 85px;
   }
 
   &__title {
@@ -190,15 +202,22 @@
       grid-row-start: 3;
       grid-row-end: 3;
     }
-  }
-  input {
-    width: 184px;
-    height: 45px;
-    margin-top: $margin-principal;
-    background-color: $color-button;
-    border-style: none;
-    color: $color-primary;
-    font-family: $font-main;
-    font-size: 20px;
+
+    &--action {
+      width: 184px;
+      height: 45px;
+      margin-top: $margin-principal;
+      background-color: $color-button;
+      border-style: none;
+      color: $color-primary;
+      font-family: $font-main;
+      font-size: 20px;
+      &:hover {
+        color: black;
+        font: bold 20px $font-titles;
+        text-transform: uppercase;
+        height: 60px;
+      }
+    }
   }
 }

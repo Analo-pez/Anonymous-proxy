@@ -71,3 +71,26 @@
     transform: translate(100%, -50%);
   }
 }
+
+.animation {
+  animation-duration: 3s;
+  animation-name: intro;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes intro {
+  from {
+    transform: translate(-1200%, -50%);
+  }
+  to {
+    transform: translate(0%, -50%);
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .footer {
+    padding-left: 370px;
+    padding-right: 370px;
+  }
+}
