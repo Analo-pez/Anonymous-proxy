@@ -2,8 +2,8 @@
   margin-top: $margin-elements;
 
   @media all and (min-width: 1280px) {
-    padding-left: 275px;
-    padding-right: 275px;
+    padding-left: 17.1875em;
+    padding-right: 17.1875em;
   }
 }
 
@@ -15,60 +15,66 @@
 
   @media all and (min-width: 768px) {
     display: inline-block;
-    margin-left: 39px;
-    margin-right: 39px;
+    margin-left: 2.4375em;
+    margin-right: 2.4375em;
   }
 
   &__note {
     color: $color-smallFont;
     text-transform: capitalize;
-    padding-bottom: 5px;
+    padding-bottom: 0.3125em;
 
     @media all and (min-width: 1280px) {
-      font-size: 16px;
+      font-size: 1em;
     }
   }
 
   &__title {
     font-family: $font-titles;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
     text-transform: capitalize;
 
     @media all and (min-width: 768px) {
-      font-size: 26px;
+      font-size: 1.625em;
     }
     @media all and (min-width: 1280px) {
-      font-size: 32px;
-      line-height: 45px;
+      font-size: 2em;
     }
   }
 
   &__text {
     font-family: $font-main;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: semibold;
-    line-height: 1.6;
     color: $color-greyFont;
     margin-bottom: $margin-elements;
     margin-top: $margin-principal;
+
+    @media all and (min-width: 768px) {
+      margin-top: $margin-elements;
+    }
+
+    @media all and (min-width: 1280px) {
+      margin-top: $margin-elements;
+    }
   }
 
   &__button {
-    border: 2px solid $color-button;
-    width: 91px;
-    height: 45px;
-    padding: 8px;
+    border: 0.125em solid $color-button;
+    width: 5.6875em;
+    height: 2.8125em;
+    padding: 0.5em;
     text-align: center;
     margin-bottom: $margin-elements;
-    border-radius: 25px;
+    border-radius: 1.5625em;
     &:hover {
       background-color: $color-button;
     }
     &--action {
       font-family: $font-titles;
       color: $color-button;
-      font-size: 20px;
+      font-size: 1.25em;
     }
   }
 }
@@ -77,30 +83,34 @@
   background-color: $color-secondary;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 110px repeat(3, 125px) 150px;
+  grid-template-rows: 6.875em repeat(3, 7.8125em) 9.375em;
 
   @media all and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 105px 167px 125px;
-    padding-left: 39px;
-    padding-right: 39px;
+    grid-template-rows: 7.5em 10em 7.8125em;
+    padding-left: 2.4375em;
+    padding-right: 2.4375em;
   }
 
   @media all and (min-width: 1280px) {
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-left: 5.3125em;
+    padding-right: 5.3125em;
   }
 
   &__title {
     text-align: center;
     font-family: $font-titles;
-    font-size: 24px;
+    font-size: 1.5em;
     margin-top: $margin-elements;
     grid-column: span 5;
 
     @media all and (min-width: 768px) {
       grid-column: 1/4;
-      font-size: 26px;
+      font-size: 1.625em;
+    }
+    @media all and (min-width: 1280px) {
+      grid-column: 1/4;
+      font-size: 2em;
     }
   }
   &__item1 {
@@ -116,19 +126,19 @@
 
     &--title {
       font-family: $font-titles;
-      font-size: 18px;
+      font-size: 1.125em;
 
       @media all and (min-width: 768px) {
-        font-size: 24px;
+        font-size: 1.5em;
       }
     }
     &--text {
       font-family: $font-main;
-      font-size: 18px;
+      font-size: 1.125em;
 
       @media all and (min-width: 768px) {
-        font-size: 20px;
-        padding-top: 10px;
+        font-size: 1.25em;
+        padding-top: 0.625em;
       }
     }
   }
@@ -141,26 +151,24 @@
       grid-column: span 1;
       grid-row-start: 2;
       grid-row-end: 3;
-      font-size: 24px;
-      padding-left: $margin-principal;
-      padding-right: $margin-principal;
+      margin-left: $margin-principal;
     }
 
     &--title {
       font-family: $font-titles;
-      font-size: 18px;
+      font-size: 1.125em;
 
       @media all and (min-width: 768px) {
-        font-size: 24px;
+        font-size: 1.5em;
       }
     }
     &--text {
       font-family: $font-main;
-      font-size: 18px;
+      font-size: 1.125em;
 
       @media all and (min-width: 768px) {
-        font-size: 20px;
-        padding-top: 10px;
+        font-size: 1.25em;
+        padding-top: 0.625em;
       }
     }
   }
@@ -178,19 +186,19 @@
 
     &--title {
       font-family: $font-titles;
-      font-size: 18px;
+      font-size: 1.125em;
 
       @media all and (min-width: 768px) {
-        font-size: 24px;
+        font-size: 1.5em;
       }
     }
     &--text {
       font-family: $font-main;
-      font-size: 18px;
+      font-size: 1.125em;
 
       @media all and (min-width: 768px) {
-        font-size: 20px;
-        padding-top: 10px;
+        font-size: 1.25em;
+        padding-top: 0.625em;
       }
     }
   }
@@ -206,19 +214,19 @@
 
     &--action {
       width: 210px;
-      height: 45px;
+      height: 2.8125em;
       margin-top: $margin-principal;
       background-color: $color-button;
       border-style: none;
       color: $color-primary;
       font-family: $font-main;
-      font-size: 20px;
-      border-radius: 25px;
+      font-size: 1.25em;
+      border-radius: 1.5625em;
       &:hover {
         color: black;
-        font: bold 20px $font-titles;
+        font: bold 1.25em $font-titles;
         text-transform: uppercase;
-        height: 60px;
+        height: 3.75em;
         &:active {
           color: $color-blue;
         }

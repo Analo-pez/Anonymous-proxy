@@ -2,12 +2,12 @@
   display: inline-block;
   position: fixed;
   z-index: 999px;
-  width: 44px;
-  height: 44px;
+  width: 2.75em;
+  height: 2.75em;
   background-color: #0271bc;
 
   &__menu--img {
     width: 50%;
-    margin: 10px;
+    margin: 0.625em;
   }
 }
