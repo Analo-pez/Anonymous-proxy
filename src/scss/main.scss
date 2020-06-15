@@ -4,6 +4,13 @@ html {
 
 @import "core/variables";
 @import "core/reset";
+
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+  min-width: 411px;
+}
+
 @import "layout/header";
 @import "layout/hero";
 @import "layout/mainPage";
