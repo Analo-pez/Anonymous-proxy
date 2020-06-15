@@ -64,7 +64,12 @@
   padding-top: $margin-principal;
   border-radius: 50%;
   position: relative;
-  transform: translate(360%, -175%);
+  transform: translate(320%, -175%);
+
+  @media all and (min-width: 411px) {
+    padding: 13px;
+    transform: translate(360%, -175%);
+  }
 
   @media all and (min-width: 768px) {
     padding: 13px;
