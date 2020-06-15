@@ -1,8 +1,8 @@
 .footer {
   background-color: $color-blue;
   font-family: $font-main;
-  padding-top: 3.75em;
-  padding-bottom: 3.75em;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -11,8 +11,8 @@
     flex-direction: row;
     justify-content: space-between;
     text-align: start;
-    padding-left: 2.4375em;
-    padding-right: 2.4375em;
+    padding-left: 39px;
+    padding-right: 39px;
     padding-top: 0;
   }
 
@@ -20,7 +20,7 @@
     color: $color-primary;
   }
   li {
-    padding: 0.5em;
+    padding: 8px;
   }
 }
 
@@ -30,7 +30,7 @@
 
   @media all and (min-width: 768px) {
     order: 3;
-    padding-top: 3.125em;
+    padding-top: 50px;
     margin-right: $margin-elements;
   }
 }
@@ -42,8 +42,8 @@
 
   &__icon {
     color: $color-button;
-    padding: 0.0625em;
-    margin: 0.125em;
+    padding: 1px;
+    margin: 2px;
   }
 
   &__text {
@@ -53,21 +53,21 @@
 
   @media all and (min-width: 768px) {
     order: -1;
-    padding-top: 3.125em;
+    padding-top: 50px;
   }
 }
 
 .footer__symbol {
   background-color: $color-primary;
-  width: 3.125em;
-  height: 3.125em;
+  width: 50px;
+  height: 50px;
   padding-top: $margin-principal;
   border-radius: 50%;
   position: relative;
   transform: translate(360%, -175%);
 
   @media all and (min-width: 768px) {
-    padding: 0.8125em;
+    padding: 13px;
     transform: translate(100%, -50%);
   }
 }
@@ -90,7 +90,7 @@
 
 @media all and (min-width: 1280px) {
   .footer {
-    padding-left: 23.125em;
-    padding-right: 23.125em;
+    padding-left: 370px;
+    padding-right: 370px;
   }
 }

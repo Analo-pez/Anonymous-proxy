@@ -2,8 +2,8 @@
   margin-top: $margin-elements;
 
   @media all and (min-width: 1280px) {
-    padding-left: 17.1875em;
-    padding-right: 17.1875em;
+    padding-left: 275px;
+    padding-right: 275px;
   }
 }
 
@@ -15,14 +15,14 @@
 
   @media all and (min-width: 768px) {
     display: inline-block;
-    margin-left: 2.4375em;
-    margin-right: 2.4375em;
+    margin-left: 39px;
+    margin-right: 39px;
   }
 
   &__note {
     color: $color-smallFont;
     text-transform: capitalize;
-    padding-bottom: 0.3125em;
+    padding-bottom: 5px;
 
     @media all and (min-width: 1280px) {
       font-size: 1em;
@@ -62,12 +62,12 @@
 
   &__button {
     border: 0.125em solid $color-button;
-    width: 5.6875em;
-    height: 2.8125em;
-    padding: 0.5em;
+    width: 91px;
+    height: 45px;
+    padding: 8px;
     text-align: center;
     margin-bottom: $margin-elements;
-    border-radius: 1.5625em;
+    border-radius: 25px;
     &:hover {
       background-color: $color-button;
     }
@@ -83,18 +83,18 @@
   background-color: $color-secondary;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 6.875em repeat(3, 7.8125em) 9.375em;
+  grid-template-rows: 110px repeat(3, 125px) 150px;
 
   @media all and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 7.5em 10em 7.8125em;
-    padding-left: 2.4375em;
-    padding-right: 2.4375em;
+    grid-template-rows: 120px 160px 125px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 
   @media all and (min-width: 1280px) {
-    padding-left: 5.3125em;
-    padding-right: 5.3125em;
+    padding-left: 85px;
+    padding-right: 85px;
   }
 
   &__title {
@@ -138,7 +138,7 @@
 
       @media all and (min-width: 768px) {
         font-size: 1.25em;
-        padding-top: 0.625em;
+        padding-top: 10px;
       }
     }
   }
@@ -168,7 +168,7 @@
 
       @media all and (min-width: 768px) {
         font-size: 1.25em;
-        padding-top: 0.625em;
+        padding-top: 10px;
       }
     }
   }
@@ -198,7 +198,7 @@
 
       @media all and (min-width: 768px) {
         font-size: 1.25em;
-        padding-top: 0.625em;
+        padding-top: 10px;
       }
     }
   }
@@ -214,19 +214,19 @@
 
     &--action {
       width: 210px;
-      height: 2.8125em;
+      height: 45px;
       margin-top: $margin-principal;
       background-color: $color-button;
       border-style: none;
       color: $color-primary;
       font-family: $font-main;
       font-size: 1.25em;
-      border-radius: 1.5625em;
+      border-radius: 25px;
       &:hover {
         color: black;
         font: bold 1.25em $font-titles;
         text-transform: uppercase;
-        height: 3.75em;
+        height: 60px;
         &:active {
           color: $color-blue;
         }

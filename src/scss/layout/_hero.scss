@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
 
   @media all and (min-width: 768px) {
-    height: 48em;
+    height: 768px;
   }
 
   &__title {
@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 24em;
+    margin-top: 384px;
 
     span {
       text-transform: uppercase;
@@ -38,7 +38,7 @@
       }
     }
     p {
-      margin-top: 1.25em;
+      margin-top: 20px;
       font-family: $font-main;
 
       @media all and (min-width: 768px) {
@@ -50,8 +50,8 @@
 
 .hero__symbol {
   background-color: $color-primary;
-  width: 3.125em;
-  height: 3.125em;
+  width: 50px;
+  height: 50px;
   padding: $margin-principal;
   border-radius: 50%;
   position: relative;
