@@ -17,22 +17,24 @@
   </head>
 
   <body>
-    <header class="header">
-      <a
-        class="header__menu"
-        href="https://adalab.es/"
-        title="Ir a la home de Adalab"
-        target="__blank"
-      >
-        <img
-          class="header__menu--img"
-          src="./assets/images/ico-menu.svg"
-          alt="menu icon"
-        />
-      </a>
+    <header class="wrapper">
+      <div class="header">
+        <a
+          class="header__menu"
+          href="https://adalab.es/"
+          title="Ir a la home de Adalab"
+          target="__blank"
+        >
+          <img
+            class="header__menu--img"
+            src="./assets/images/ico-menu.svg"
+            alt="menu icon"
+          />
+        </a>
+      </div>
     </header>
 
-    <section class="hero">
+    <section class="hero wrapper">
       <div class="hero__title">
         <span>anonymous</span>
         <span>proxy</span>
@@ -59,8 +61,8 @@
           <span class="description__title"> looking through a</span>
           <span class="description__title">window</span>
           <p class="description__text">
-            Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis,
-            at luctus ex diam nec lectus. vivamus semper sodales rutrum
+            Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+            luctus ex diam nec lectus. vivamus semper sodales rutrum
           </p>
           <nav class="description__button">
             <ul class="actions">
@@ -77,7 +79,7 @@
           </nav>
         </div>
       </section>
-      <section class="articles">
+      <section class="articles wrapper">
         <h3 class="articles__title">3 Reasons To Purchase</h3>
         <article class="articles__item1">
           <h4 class="articles__item1--title">Ut sed metus</h4>
@@ -106,17 +108,14 @@
     </main>
 
     <footer class="footer wrapper">
-      <div class="footer__">
+      <div class="footerNav">
         <nav class="footer__symbol animation">
           <a class="footer__symbol--nav" href="./index.html#hero__title">
-            <img
-              class="footer__symbol--img"
-              src="./assets/images/ico-arrow.svg"
-            />
+            <img class="footer__symbol--img" src="./assets/images/ico-arrow.svg" />
           </a>
         </nav>
-        <nav class="navigator">
-          <ul class="footer-menu">
+        <nav class="footer__options">
+          <ul class="footer__options--links">
             <li>
               <a href="https://adalab.es/">ARTICLES</a>
             </li>
@@ -137,7 +136,7 @@
       </div>
       <div class="contactWebs">
         <nav>
-          <ul class="footer-menu">
+          <ul class="contectWebs__menu">
             <li>
               <a href="https://adalab.es/">TWITTER</a>
             </li>
@@ -157,5 +156,6 @@
         </span>
       </div>
     </footer>
+
   </body>
 </html>
