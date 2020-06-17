@@ -79,6 +79,23 @@
   }
 }
 
+.Secondary {
+  width: 100%;
+  background-color: $color-blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media all and (min-width: 768px) {
+  .Secondary__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+  }
+}
+
 .articles {
   background-color: $color-secondary;
   display: grid;
