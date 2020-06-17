@@ -68,6 +68,9 @@
     text-align: center;
     margin-bottom: $margin-elements;
     border-radius: 25px;
+    font-family: $font-titles;
+    color: $color-button;
+    font-size: 20px;
     &:hover {
       background-color: $color-button;
     }
@@ -82,8 +85,9 @@
 .articles {
   background-color: $color-secondary;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 110px repeat(3, 125px) 150px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 110px 125px 125px 125px 180px;
+  padding: $margin-elements;
 
   @media all and (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
@@ -97,13 +101,12 @@
     padding-right: 85px;
   }
 
-  &__title {
+  &__titlePrincipal {
     text-align: center;
     font-family: $font-titles;
     font-size: 1.5em;
     margin-top: $margin-elements;
-    grid-column: span 5;
-
+    grid-column: span 3;
     @media all and (min-width: 768px) {
       grid-column: 1/4;
       font-size: 1.625em;
@@ -205,34 +208,24 @@
       }
     }
   }
-  &__button {
-    text-align: center;
-    grid-column: 2/5;
 
-    @media all and (min-width: 768px) {
-      grid-column: span 3;
-      grid-row-start: 3;
-      grid-row-end: 3;
-    }
-
-    &--action {
-      width: 210px;
-      height: 45px;
-      margin-top: $margin-principal;
-      background-color: $color-button;
-      border-style: none;
-      color: $color-primary;
-      font-family: $font-main;
-      font-size: 1.25em;
-      border-radius: 25px;
-      &:hover {
-        color: black;
-        font: bold 1.25em $font-titles;
-        text-transform: uppercase;
-        height: 60px;
-        &:active {
-          color: $color-blue;
-        }
+  &--action {
+    width: 210px;
+    height: 45px;
+    margin-top: $margin-principal;
+    background-color: $color-button;
+    border-style: none;
+    color: $color-primary;
+    font-family: $font-main;
+    font-size: 1.25em;
+    border-radius: 25px;
+    &:hover {
+      color: black;
+      font: bold 1.25em $font-titles;
+      text-transform: uppercase;
+      height: 60px;
+      &:active {
+        color: $color-blue;
       }
     }
   }
