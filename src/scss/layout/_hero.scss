@@ -17,9 +17,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 384px;
 
-    span {
+    h1 {
+      margin: 0;
       text-transform: uppercase;
       font-family: $font-titles;
       font-size: 2.625em;
