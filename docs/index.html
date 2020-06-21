@@ -19,34 +19,40 @@
   <body>
     <header class="wrapper">
       <div class="header">
-        <a
-          class="header__menu"
-          href="https://adalab.es/"
-          title="Ir a la home de Adalab"
-          target="__blank"
-        >
-          <img
-            class="header__menu--img"
-            src="./assets/images/ico-menu.svg"
-            alt="menu icon"
-          />
-        </a>
+        <nav>
+          <a
+            class="header__menu"
+            href="https://adalab.es/"
+            title="Ir a la home de Adalab"
+            target="__blank"
+          >
+            <img
+              class="header__menu--img"
+              src="./assets/images/ico-menu.svg"
+              title="menu de navegacion formato hamburguesa"
+              alt="menu icon"
+          /></a>
+        </nav>
       </div>
     </header>
 
     <section class="hero wrapper">
-      <div class="hero__title">
-        <span>anonymous</span>
-        <span>proxy</span>
+      <div class="hero__title" id="heroId">
+        <h1>
+          anonymous <br />
+          proxy
+        </h1>
         <p>
           In hac habitasse platea dictumst.
         </p>
       </div>
       <nav class="hero__symbol">
-        <a class="hero__symbol--nav" href="./index.html#articles__title">
+        <a class="hero__symbol--nav" href="./index.html#articles">
           <img
             class="hero__symbol--img"
             src="./assets/images/ico-scroll-down.svg"
+            title="scroll down"
+            alt="ico-scroll-down"
           />
         </a>
       </nav>
@@ -55,9 +61,9 @@
     <main class="wrapper">
       <section class="principalSection">
         <div class="description">
-          <p class="description__note">
+          <h2 class="description__note">
             <small> insomnia tips</small>
-          </p>
+          </h2>
           <span class="description__title"> looking through a</span>
           <span class="description__title">window</span>
           <p class="description__text">
@@ -80,23 +86,23 @@
         </div>
       </section>
       <section class="articles wrapper">
-        <h3 class="articles__title">3 Reasons To Purchase</h3>
+        <h3 class="articles__title" id="articles">3 Reasons To Purchase</h3>
         <article class="articles__item1">
           <h4 class="articles__item1--title">Ut sed metus</h4>
           <p class="articles__item1--text">
-            Lorem ipsun dolor sit amet, consecteur.
+            Lorem ipsum dolor sit amet, consecteur.
           </p>
         </article>
         <article class="articles__item2">
           <h5 class="articles__item2--title">Curabitur ac erat</h5>
           <p class="articles__item2--text">
-            Mauris matis urna quis lorem molestie
+            Mauris mattis urna quis lorem molestie.
           </p>
         </article>
         <article class="articles__item3">
           <h5 class="articles__item3--title">Morbi dictum</h5>
           <p class="articles__item3--text">
-            Aliquam in dolor et dolor tincidunt
+            Aliquam in dolor et dolor tincidunt.
           </p>
         </article>
         <nav class="articles__button">
@@ -110,26 +116,35 @@
     <footer class="footer wrapper">
       <div class="footerNav">
         <nav class="footer__symbol animation">
-          <a class="footer__symbol--nav" href="./index.html#hero__title">
-            <img class="footer__symbol--img" src="./assets/images/ico-arrow.svg" />
+          <a
+            class="footer__symbol--nav"
+            href="./index.html#heroId"
+            title="go to section hero"
+          >
+            <img
+              class="footer__symbol--img"
+              src="./assets/images/ico-arrow.svg"
+              title="go to tips"
+              alt="scroll-up icon"
+            />
           </a>
         </nav>
         <nav class="footer__options">
           <ul class="footer__options--links">
             <li>
-              <a href="https://adalab.es/">ARTICLES</a>
+              <a href="https://adalab.es/" title="go to articles">ARTICLES</a>
             </li>
             <li>
-              <a href="https://adalab.es/">BOOKS</a>
+              <a href="https://adalab.es/" title="go to books">BOOKS</a>
             </li>
             <li>
-              <a href="https://adalab.es/">EVENTS</a>
+              <a href="https://adalab.es/" title="go to events">EVENTS</a>
             </li>
             <li>
-              <a href="https://adalab.es/">REASONS</a>
+              <a href="https://adalab.es/" title="go to reasons">REASONS</a>
             </li>
             <li>
-              <a href="https://adalab.es/">TIPS</a>
+              <a href="https://adalab.es/" title="go to tips">TIPS</a>
             </li>
           </ul>
         </nav>
@@ -138,13 +153,15 @@
         <nav>
           <ul class="contectWebs__menu">
             <li>
-              <a href="https://adalab.es/">TWITTER</a>
+              <a href="https://adalab.es/" title="go to twitter">TWITTER</a>
             </li>
             <li>
-              <a href="https://adalab.es/">INSTAGRAM</a>
+              <a href="https://adalab.es/" title="go to instagram">INSTAGRAM</a>
             </li>
             <li>
-              <a href="https://adalab.es/">MASTODON.SOCIAL</a>
+              <a href="https://adalab.es/" title="go to mastodon.social"
+                >MASTODON.SOCIAL</a
+              >
             </li>
           </ul>
         </nav>
